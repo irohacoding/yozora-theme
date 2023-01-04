@@ -1,6 +1,6 @@
-;;; yozora-theme.el --- A dark theme for Emacs inspired by moon sky. -*- lexical-binding: t -*-
+;;; yozora-theme.el --- A dark theme for Emacs inspired by moon sky -*- lexical-binding: t -*-
 
-;;; Copyright (c) 2021-2022 IrohaCoding.
+;;; Copyright (C) 2021-2023 IrohaCoding.
 
 ;; This file is not part of GNU Emacs, but is distributed under
 ;; the same terms.
@@ -18,11 +18,10 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs. If not, see <http://www.gnu.org/licenses/>.
 
-;; Author: IrohaCoding
-;; Email: info@irohacoding.com
+;; Author: IrohaCoding <info@irohacoding.com>
 ;; URL: https://github.com/irohacoding/yozora-theme
 ;; Created: 2021/11/29 10:23:24
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 
