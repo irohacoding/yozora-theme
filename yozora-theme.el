@@ -45,7 +45,7 @@
        (light-gray   "#3f3f3e")
        (gray         "#cfcfce")
        (dark-gray    "#a3a3ad")
-       (light-green  "#ccff33")
+       (light-green  "#cce123")
        (green        "#339900")
        (light-blue   "#a0d8ef")
        (blue         "#4fb0dd")
@@ -81,7 +81,7 @@
      ((((class grayscale) (background light)) (:slant italic :weight bold :foreground ,dark-gray))
       (((class grayscale) (background dark)) (:slant italic :weight bold :foreground ,gray))
       (((class color) (min-colors 88) (background light)) (:foreground ,red))
-      (((class color) (min-colors 88) (background dark)) (:foreground ,orange))
+      (((class color) (min-colors 88) (background dark)) (:foreground ,dark-gray))
       (((class color) (min-colors 16) (background light)) (:foreground ,red))
       (((class color) (min-colors 16) (background dark)) (:foreground ,red))
       (((class color) (min-colors 8) (background light)) (:foreground ,red))
@@ -95,7 +95,7 @@
    `(font-lock-preprocessor-face ((t (:inherit (font-lock-builtin-face)))))
    `(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
    `(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
-   `(font-lock-string-face ((t (:foreground ,brown))))
+   `(font-lock-string-face ((t (:foreground ,dark-blue))))
    `(font-lock-type-face ((t (:foreground ,green))))
    `(font-lock-variable-name-face ((t (:foreground ,yellow))))
    `(font-lock-warning-face ((t (:inherit (error)))))
@@ -138,7 +138,9 @@
    `(web-mode-html-attr-name-face ((t :foreground ,gray)))
    `(web-mode-html-attr-value-face ((t :foreground ,light-green)))
    `(web-mode-css-selector-face ((t :foreground ,light-blue)))
-   `(web-mode-css-property-name-face ((t :foreground ,light-yellow)))))
+   `(web-mode-css-property-name-face ((t :foreground ,yellow)))
+   `(web-mode-function-name-face ((t :foreground ,light-blue)))
+   `(web-mode-function-call-face ((t :foreground ,light-green)))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
@@ -146,9 +148,4 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'yozora)
-
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; yozora-theme.el ends here
