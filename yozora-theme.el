@@ -20,8 +20,8 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; URL: https://github.com/irohacoding/yozora-theme
-;; Created: 2021/11/29 10:23:24
-;; Version: 0.0.2
+;; Created: 2021/11/29
+;; Version: 0.0.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 
@@ -46,7 +46,7 @@
        (gray         "#cfcfce")
        (dark-gray    "#a3a3ad")
        (light-green  "#cce123")
-       (green        "#339900")
+       (green        "#8ee023")
        (light-blue   "#a0d8ef")
        (blue         "#4fb0dd")
        (dark-blue    "#4894ad")
@@ -74,7 +74,7 @@
    `(secondary-selection ((t (:extend t :background ,yellow))))
    `(trailing-whitespace ((t (:background ,dark-red))))
 
-   ;;; Font Lock
+   ;; Font Lock
    `(font-lock-builtin-face ((t (:foreground ,dark-blue))))
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-comment-face
@@ -100,14 +100,14 @@
    `(font-lock-variable-name-face ((t (:foreground ,yellow))))
    `(font-lock-warning-face ((t (:inherit (error)))))
 
-   ;;; Mode Line
+   ;; Mode Line
    `(mode-line ((t (:foreground ,fg :background ,black :box (:line-width -1 :color ,black) :weight normal))))   
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,dark-gray)))))
    `(mode-line-inactive ((t (:inherit mode-line :background ,light-gray :foreground ,dark-gray :weight light))))
 
-   ;;; Parts
+   ;; Parts
    `(button ((t (:inherit (link)))))
    `(link ((t (:foreground ,blue :underline t))))
    `(link-visited ((t (:inherit link :foreground ,purple))))
@@ -115,7 +115,7 @@
    `(header-line ((t (:inherit mode-line :background ,bg :foreground ,fg :box nil))))
    `(tooltip ((t (:inherit variable-pitch :background ,yellow :foreground ,fg))))
 
-   ;;; Search
+   ;; Search
    `(isearch ((t (:background ,orange :foreground ,fg))))
    `(isearch-fail ((((class color) (min-colors 88) (background light)) (:background ,light-red))
                    (((class color) (min-colors 88) (background dark)) (:background ,dark-red))
@@ -132,11 +132,12 @@
    `(next-error ((t (:inherit (region)))))
    `(query-replace ((t (:inherit isearch))))
 
-   ;;; Web-mode
+   ;; Web-mode
    `(web-mode-doctype-face ((t :foreground ,dark-gray)))
    `(web-mode-html-tag-face ((t :foreground ,light-red)))
    `(web-mode-html-attr-name-face ((t :foreground ,gray)))
    `(web-mode-html-attr-value-face ((t :foreground ,light-green)))
+   `(web-mode-html-tag-bracket-face ((t :foreground ,light-red)))
    `(web-mode-css-selector-face ((t :foreground ,light-blue)))
    `(web-mode-css-property-name-face ((t :foreground ,yellow)))
    `(web-mode-function-name-face ((t :foreground ,light-blue)))
