@@ -21,7 +21,7 @@
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; URL: https://github.com/irohacoding/yozora-theme
 ;; Created: 2021-11-29
-;; Version: 0.0.4
+;; Version: 0.0.5
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 
@@ -35,6 +35,21 @@
 (deftheme yozora
   "A dark, relaxing theme for Emacs as if you were under the moon sky.")
 
+(defgroup yozora nil
+  "Yozora theme options."
+  :group 'face)
+
+(defcustom yozora-hero-color "#51bef4"
+  "Color for hero."
+  :tag "Hero Color"
+  :group 'yozora)
+
+(defun yozora-reload ()
+  "Reload the Yozora theme."
+  (interactive)
+  (disable-theme 'yozora)
+  (load-theme 'yozora t))
+
 (let* ((petal  "#252525")
        (sky    "#323232")
        (bird   "#3f3f3f")
@@ -46,7 +61,7 @@
        (star   "#eeee99")
        (meteor "#f1f1de")
        (heart  "#e5a4bf")
-       (hero   "#51bef4"))
+       (hero   (symbol-value 'yozora-hero-color)))
 
   (custom-theme-set-faces
    'yozora
