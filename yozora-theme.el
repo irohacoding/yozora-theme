@@ -1,6 +1,13 @@
 ;;; yozora-theme.el --- A dark theme for Emacs inspired by moon sky -*- lexical-binding: t -*-
 
-;;; Copyright (C) 2021-2023 IrohaCoding.
+;;; Copyright (C) 2021-2023 IrohaCoding
+
+;; Author: IrohaCoding <info@irohacoding.com>
+;; Created: 2021-11-29
+;; Version: 0.1.0
+;; Keywords: faces
+;; Package-Requires: ((emacs "27.1"))
+;; Homepage: https://github.com/irohacoding/yozora-theme
 
 ;; This file is not part of GNU Emacs, but is distributed under
 ;; the same terms.
@@ -17,13 +24,6 @@
 
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs. If not, see <http://www.gnu.org/licenses/>.
-
-;; Author: IrohaCoding <info@irohacoding.com>
-;; URL: https://github.com/irohacoding/yozora-theme
-;; Created: 2021-11-29
-;; Version: 0.0.5
-;; Keywords: faces
-;; Package-Requires: ((emacs "27.1"))
 
 ;;; Commentary:
 
@@ -42,6 +42,7 @@
 (defcustom yozora-hero-color "#51bef4"
   "Color for hero."
   :tag "Hero Color"
+  :type '(alist :key-type symbol :value-type string)
   :group 'yozora)
 
 (defun yozora-reload ()
@@ -147,5 +148,4 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'yozora)
-
 ;;; yozora-theme.el ends here
