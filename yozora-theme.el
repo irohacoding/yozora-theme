@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -42,7 +42,7 @@
 (defcustom yozora-hero-color "#51bef4"
   "Color for hero."
   :tag "Hero Color"
-  :type '(alist :key-type symbol :value-type string)
+  :type 'string
   :group 'yozora)
 
 (defun yozora-reload ()
@@ -62,7 +62,7 @@
        (star   "#eeee99")
        (meteor "#f1f1de")
        (heart  "#e5a4bf")
-       (hero   (symbol-value 'yozora-hero-color)))
+       (hero   yozora-hero-color))
 
   (custom-theme-set-faces
    'yozora
