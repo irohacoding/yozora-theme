@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -73,20 +73,20 @@
    `(minibuffer-prompt   ((t (:foreground ,leaf))))
    `(highlight           ((t (:background ,petal))))
    `(region              ((t (:extend t :background ,cloud))))
-   `(shadow              ((t (:foreground ,sky))))
-   `(secondary-selection ((t (:extend t :background ,star))))
-   `(trailing-whitespace ((t (:background ,star))))
+   `(shadow              ((t (:foreground ,meteor))))
+   `(secondary-selection ((t (:extend t :foreground ,bird :background ,star))))
+   `(trailing-whitespace ((t (:foreground ,bird :background ,star))))
 
-   `(font-lock-builtin-face              ((t (:foreground ,moon))))
+   `(show-paren-match            ((t (:foreground ,bird :background ,star))))
+   `(show-paren-match-expression ((t (:background ,cloud))))
+   `(show-paren-mismatch         ((t (:background ,heart))))
+
+   `(font-lock-builtin-face ((t (:foreground ,moon))))
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-comment-face
-     ((((class grayscale) (background light)) (:slant italic :weight bold :foreground ,bird))
-      (((class grayscale) (background dark)) (:slant italic :weight bold :foreground ,star))
-      (((class color) (min-colors 88) (background light)) (:foreground ,bird))
+     ((((class grayscale)) (:slant italic :weight bold :foreground ,cloud))
       (((class color) (min-colors 88) (background dark)) (:foreground ,star))
-      (((class color) (min-colors 16) (background light)) (:foreground ,bird))
       (((class color) (min-colors 16) (background dark)) (:foreground ,star))
-      (((class color) (min-colors 8) (background light)) (:foreground ,bird))
       (((class color) (min-colors 8) (background dark)) (:foreground ,star))
       (t (:slant italic :weight bold))))
    `(font-lock-constant-face             ((t (:foreground ,leaf))))
@@ -113,23 +113,23 @@
    `(link-visited ((t (:inherit link :foreground ,cloud))))
    `(fringe       ((t (:background ,sky))))
    `(header-line  ((t (:inherit mode-line :background ,sky :foreground ,wing :box nil))))
-   `(tooltip      ((t (:inherit variable-pitch :background ,meteor :foreground ,wing))))
+   `(tooltip      ((t (:inherit variable-pitch :background ,meteor :foreground ,bird))))
 
-   `(isearch      ((t (:background ,leaf :foreground ,wing))))
-   `(isearch-fail ((((class color) (min-colors 88) (background light)) (:background ,heart))
-                   (((class color) (min-colors 88) (background dark)) (:background , heart))
-                   (((class color) (min-colors 16)) (:background ,heart))
-                   (((class color) (min-colors 8)) (:background ,heart))
+   `(isearch      ((t (:background ,leaf :foreground ,bird))))
+   `(isearch-fail ((((class color) (min-colors 88)) (:foreground ,bird :background ,heart))
+                   (((class color) (min-colors 16)) (:foreground ,bird :background ,heart))
+                   (((class color) (min-colors 8)) (:foreground ,bird :background ,heart))
                    (((class color grayscale)) (:foreground ,cloud))
                    (t (:inverse-video t))))
-   `(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background ,sky))
-                     (((class color) (min-colors 88) (background dark)) (:background ,sky))
+   `(lazy-highlight ((((class color) (min-colors 88)) (:background ,sky))
                      (((class color) (min-colors 16)) (:background ,sky))
                      (((class color) (min-colors 8)) (:background ,sky))
                      (t (:underline (:color foreground-color :style line)))))
-   `(match         ((t (:background ,star))))
+   `(match         ((t (:foreground ,bird :background ,star))))
    `(next-error    ((t (:inherit (region)))))
    `(query-replace ((t (:inherit isearch))))
+
+   `(info-index-match ((t (:background ,bird))))
 
    `(web-mode-doctype-face           ((t :foreground ,cloud)))
    `(web-mode-html-tag-face          ((t :foreground ,leaf)))
