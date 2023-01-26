@@ -102,7 +102,7 @@
    `(font-lock-variable-name-face        ((t (:foreground ,leaf))))
    `(font-lock-warning-face              ((t (:inherit (error)))))
 
-   `(mode-line           ((t (:foreground ,wing :background ,insect :box (:line-width -1 :color ,insect) :weight normal))))   
+   `(mode-line           ((t (:foreground ,wing :background ,insect :box (:line-width -1 :color ,insect) :weight normal))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,insect)))))
@@ -148,4 +148,5 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'yozora)
+
 ;;; yozora-theme.el ends here
