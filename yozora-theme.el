@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.1.3
+;; Version: 0.1.4
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -86,7 +86,8 @@
    `(font-lock-variable-name-face        ((t (:foreground ,leaf))))
    `(font-lock-warning-face              ((t (:inherit (error)))))
 
-   `(mode-line           ((t (:foreground ,wing :background ,insect :box (:line-width -1 :color ,insect) :weight normal))))
+   `(mode-line ((t (:foreground ,wing :background ,insect
+                                :box (:line-width -1 :color ,insect) :weight normal))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,insect)))))
@@ -115,16 +116,16 @@
 
    `(info-index-match ((t (:background ,bird))))
 
-   `(web-mode-doctype-face           ((t :foreground ,cloud)))
-   `(web-mode-html-tag-face          ((t :foreground ,leaf)))
-   `(web-mode-html-attr-name-face    ((t :foreground ,star)))
-   `(web-mode-html-attr-value-face   ((t :foreground ,heart)))
-   `(web-mode-html-tag-bracket-face  ((t :foreground ,leaf)))
-   `(web-mode-css-selector-face      ((t :foreground ,leaf)))
-   `(web-mode-css-property-name-face ((t :foreground ,leaf)))
-   `(web-mode-function-name-face     ((t :foreground ,heart)))
-   `(web-mode-function-call-face     ((t :foreground ,star)))
-   `(web-mode-valiable-name-face     ((t :foreground ,leaf)))))
+   `(web-mode-doctype-face           ((t (:foreground ,cloud))))
+   `(web-mode-html-tag-face          ((t (:foreground ,leaf))))
+   `(web-mode-html-attr-name-face    ((t (:foreground ,star))))
+   `(web-mode-html-attr-value-face   ((t (:foreground ,heart))))
+   `(web-mode-html-tag-bracket-face  ((t (:foreground ,leaf))))
+   `(web-mode-css-selector-face      ((t (:foreground ,leaf))))
+   `(web-mode-css-property-name-face ((t (:foreground ,leaf))))
+   `(web-mode-function-name-face     ((t (:foreground ,heart))))
+   `(web-mode-function-call-face     ((t (:foreground ,star))))
+   `(web-mode-valiable-name-face     ((t (:foreground ,leaf))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
