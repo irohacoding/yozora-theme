@@ -1,28 +1,26 @@
 # yozora-theme
 
-## About
-
 A dark, relaxing theme for GNU Emacs as if you were under the moon sky.
 
 ![Screenshot](screenshot.png)
 
 ## Installation
 
-Clone this repository
+1\. Download `yozora-theme.el` to your themes directory `~/.emacs.d/themes/`.
 
-```bash
-git clone https://github.com/irohacoding/yozora-theme.git
-```
-
-Add configure to load theme in `~/.emacs.d/init.el`
+2\. Add the following code to your configuration file `~/.emacs.d/init.el` (or `.emacs`).
 
 ```elisp
-(add-to-list 'custom-theme-load-path "path/to/yozora-theme"
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+```
+3\. Load the theme. Press the key below.
+
+`M-x load-theme RET yozora RET`
+
+(Optional) If you want to make it the default theme, add the following to your `~/.emacs.d/init.el`.
+
+```elisp
 (load-theme 'yozora t)
 ```
-    
-An example path/to/yozora-theme is `~/.emacs.d/themes/` and store `yozora-theme.el` here
 
-## License
-
-Distributed under the GNU General Public License, version 3
+Yahoho, Enjoy this theme!
