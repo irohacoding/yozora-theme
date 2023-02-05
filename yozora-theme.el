@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.1.4
+;; Version: 0.1.5
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -30,10 +30,31 @@
 ;; Yozora theme is a custom theme for GNU Emacs. Inspired by moon sky at night.
 ;; Yozora means night sky in Japanese.
 
+;; Special Thanks
+
+;; All the themes for GNU Emacs!!! Always refer to these when making this theme!!
+;; Thank you very much.
+
 ;;; Code:
 
 (deftheme yozora
   "A dark, relaxing theme for Emacs as if you were under the moon sky.")
+
+(defgroup yozora nil
+  "Yozora theme options.
+The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+
+(defcustom yozora-hero-color "#51bef4"
+  "Color for hero (cursor)."
+  :type 'string
+  :group 'yozora)
+
+(defun yozora-reload ()
+  "Reload the Yozora theme after changing."
+  (interactive)
+  (disable-theme 'yozora)
+  (load-theme 'yozora t))
 
 (let* ((petal  "#252525")
        (sky    "#323232")
@@ -46,7 +67,7 @@
        (star   "#eeee99")
        (meteor "#f1f1de")
        (heart  "#e5a4bf")
-       (hero   "#51bef4"))
+       (hero   yozora-hero-color))
 
   (custom-theme-set-faces
    'yozora
@@ -119,7 +140,7 @@
    `(web-mode-doctype-face           ((t (:foreground ,cloud))))
    `(web-mode-html-tag-face          ((t (:foreground ,leaf))))
    `(web-mode-html-attr-name-face    ((t (:foreground ,star))))
-   `(web-mode-html-attr-value-face   ((t (:foreground ,heart))))
+   `(web-mode-html-attr-value-face   ((t (:foreground ,moon))))
    `(web-mode-html-tag-bracket-face  ((t (:foreground ,leaf))))
    `(web-mode-css-selector-face      ((t (:foreground ,leaf))))
    `(web-mode-css-property-name-face ((t (:foreground ,leaf))))
