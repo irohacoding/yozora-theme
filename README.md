@@ -28,7 +28,9 @@ A dark, relaxing theme for GNU Emacs as if you were under the moon sky.
 ### Change hero (cursor) color!
 
 1\. `M-x customize-option RET yozora-hero-color RET`
+
 2\. Change color in widget and `Apply and Save`
+
 3\. `M-x yozora-reload`
 
 Yahoho, Enjoy this theme!
