@@ -15,7 +15,7 @@ A dark, relaxing theme for GNU Emacs as if you were under the moon sky.
 ```
 3\. Load the theme. Press the key below.
 
-`M-x load-theme RET yozora RET`
+`M-x` `load-theme` `RET` `yozora` `RET`
 
 (Optional) If you want to make it the default theme, add the following code to your `init.el`.
 
@@ -27,10 +27,10 @@ A dark, relaxing theme for GNU Emacs as if you were under the moon sky.
 
 ### Change hero (cursor) color!
 
-1\. `M-x customize-option RET yozora-hero-color RET`
+1\. `M-x` `customize-option` `RET` `yozora-hero-color` `RET`
 
 2\. Change color in widget and `Apply and Save`
 
-3\. `M-x yozora-reload`
+3\. `M-x` `yozora-reload`
 
-Yahoho, Enjoy this theme!
+Yahoho! Enjoy this theme!!
