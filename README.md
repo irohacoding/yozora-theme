@@ -31,6 +31,6 @@ A dark, relaxing theme for GNU Emacs as if you were under the moon sky.
 
 2\. Change color in widget and `Apply and Save`
 
-3\. `M-x` `yozora-reload`
+3\. `M-x` `yozora-reload` `RET`
 
-Yahoho! Enjoy this theme!!
+Yahohoho! Enjoy this theme!!
