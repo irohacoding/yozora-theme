@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.2
+;; Version: 0.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -66,7 +66,6 @@ The theme has to be reloaded after changing anything in this group."
 
   (custom-theme-set-faces
    'yozora
-
    `(default             ((t (:foreground ,yozora-wing :background ,yozora-sky :bold nil))))
    `(cursor              ((t (:background ,yozora-hero))))
    `(escape-glyph        ((t (:foreground ,yozora-leaf))))
@@ -103,8 +102,7 @@ The theme has to be reloaded after changing anything in this group."
    '(mode-line-buffer-id ((t (:weight bold))))
    '(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,yozora-insect)))))
-   `(mode-line-inactive  ((t (:inherit mode-line :background ,yozora-bird
-                                       :foreground ,yozora-insect :weight light))))
+   `(mode-line-inactive  ((t (:inherit mode-line :background ,yozora-bird :foreground ,yozora-insect :weight light))))
    `(vertical-border     ((t (:foreground ,yozora-insect))))
 
    '(button       ((t (:inherit (link)))))
@@ -124,11 +122,11 @@ The theme has to be reloaded after changing anything in this group."
 
    `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
    `(web-mode-html-tag-face          ((t (:foreground ,yozora-leaf))))
+   `(web-mode-html-tag-bracket-face  ((t (:foreground ,yozora-leaf))))
    `(web-mode-html-attr-name-face    ((t (:foreground ,yozora-star))))
    `(web-mode-html-attr-value-face   ((t (:foreground ,yozora-moon))))
-   `(web-mode-html-tag-bracket-face  ((t (:foreground ,yozora-leaf))))
    `(web-mode-css-selector-face      ((t (:foreground ,yozora-leaf))))
-   `(web-mode-css-property-name-face ((t (:foreground ,yozora-leaf))))
+   `(web-mode-css-property-name-face ((t (:foreground ,yozora-star))))
    `(web-mode-function-name-face     ((t (:foreground ,yozora-heart))))
    `(web-mode-function-call-face     ((t (:foreground ,yozora-star))))
    `(web-mode-valiable-name-face     ((t (:foreground ,yozora-leaf))))))
