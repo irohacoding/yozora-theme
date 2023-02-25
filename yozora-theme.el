@@ -76,6 +76,7 @@ The theme has to be reloaded after changing anything in this group."
    `(shadow              ((t (:foreground ,yozora-meteor))))
    `(secondary-selection ((t (:extend t :foreground ,yozora-bird :background ,yozora-star))))
    `(trailing-whitespace ((t (:foreground ,yozora-bird :background ,yozora-star))))
+   `(linum               ((t (:foreground ,yozora-wing :background ,yozora-bird))))
 
    `(show-paren-match            ((t (:foreground ,yozora-bird :background ,yozora-star))))
    `(show-paren-match-expression ((t (:background ,yozora-cloud))))
