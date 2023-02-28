@@ -45,6 +45,7 @@ The theme has to be reloaded after changing anything in this group."
   :type 'string
   :group 'yozora)
 
+
 (defun yozora-reload ()
   "Reload the Yozora theme."
   (interactive)
@@ -96,13 +97,13 @@ The theme has to be reloaded after changing anything in this group."
    `(font-lock-string-face               ((t (:foreground ,yozora-star))))
    `(font-lock-type-face                 ((t (:foreground ,yozora-meteor))))
    `(font-lock-variable-name-face        ((t (:foreground ,yozora-leaf))))
-   '(font-lock-warning-face              ((t (:inherit (error)))))
+   `(font-lock-warning-face              ((t (:foreground ,yozora-heart :weight bold))))
 
-   `(mode-line ((t (:foreground ,yozora-wing :background ,yozora-insect
-                                :box (:line-width -1 :color ,yozora-insect) :weight normal))))
+   `(mode-line ((t (:foreground ,yozora-wing :background ,yozora-bird
+                                :box (:line-width -1 :color ,yozora-bird) :weight normal))))
    '(mode-line-buffer-id ((t (:weight bold))))
    '(mode-line-emphasis  ((t (:weight bold))))
-   `(mode-line-highlight ((t (:box (:line-width 2 :color ,yozora-insect)))))
+   `(mode-line-highlight ((t (:box (:line-width 2 :color ,yozora-petal)))))
    `(mode-line-inactive  ((t (:inherit mode-line :background ,yozora-bird :foreground ,yozora-insect :weight light))))
    `(vertical-border     ((t (:foreground ,yozora-insect))))
 
@@ -116,10 +117,12 @@ The theme has to be reloaded after changing anything in this group."
    `(isearch          ((t (:background ,yozora-leaf :foreground ,yozora-bird))))
    `(isearch-fail     ((t (:foreground ,yozora-bird :background ,yozora-heart))))
    `(lazy-highlight   ((t (:background ,yozora-sky))))
-   `(match            ((t (:foreground ,yozora-bird :background ,yozora-star))))
+   `(match            ((t (:foreground ,yozora-bird :background ,yozora-moon))))
    '(next-error       ((t (:inherit (region)))))
    '(query-replace    ((t (:inherit isearch))))
    `(info-index-match ((t (:background ,yozora-bird))))
+
+   `(dired-directory ((t (:foreground ,yozora-moon))))
 
    `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
    `(web-mode-html-tag-face          ((t (:foreground ,yozora-leaf))))
