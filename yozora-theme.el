@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.3
+;; Version: 0.3.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -45,7 +45,6 @@ The theme has to be reloaded after changing anything in this group."
   :type 'string
   :group 'yozora)
 
-
 (defun yozora-reload ()
   "Reload the Yozora theme."
   (interactive)
@@ -62,22 +61,22 @@ The theme has to be reloaded after changing anything in this group."
        (yozora-moon   "#f2f154")
        (yozora-star   "#eeee99")
        (yozora-meteor "#f1f1de")
-       (yozora-heart  "#e5a4bf")
-       (yozora-hero   yozora-hero-color))
+       (yozora-heart  "#e5a4bf"))
 
   (custom-theme-set-faces
    'yozora
    `(default             ((t (:foreground ,yozora-wing :background ,yozora-sky :bold nil))))
-   `(cursor              ((t (:background ,yozora-hero))))
+   `(cursor              ((t (:background ,yozora-hero-color))))
    `(escape-glyph        ((t (:foreground ,yozora-leaf))))
    `(homoglyph           ((t (:foreground ,yozora-leaf))))
    `(minibuffer-prompt   ((t (:foreground ,yozora-leaf))))
-   `(highlight           ((t (:background ,yozora-petal))))
+   `(highlight           ((t (:foreground ,yozora-wing :background ,yozora-petal))))
    `(region              ((t (:extend t :background ,yozora-cloud))))
    `(shadow              ((t (:foreground ,yozora-meteor))))
    `(secondary-selection ((t (:extend t :foreground ,yozora-bird :background ,yozora-star))))
    `(trailing-whitespace ((t (:foreground ,yozora-bird :background ,yozora-star))))
    `(linum               ((t (:foreground ,yozora-wing :background ,yozora-bird))))
+   `(hl-line             ((t (:background ,yozora-petal))))
 
    `(show-paren-match            ((t (:foreground ,yozora-bird :background ,yozora-star))))
    `(show-paren-match-expression ((t (:background ,yozora-cloud))))
@@ -99,8 +98,8 @@ The theme has to be reloaded after changing anything in this group."
    `(font-lock-variable-name-face        ((t (:foreground ,yozora-leaf))))
    `(font-lock-warning-face              ((t (:foreground ,yozora-heart :weight bold))))
 
-   `(mode-line ((t (:foreground ,yozora-wing :background ,yozora-bird
-                                :box (:line-width -1 :color ,yozora-bird) :weight normal))))
+   `(mode-line ((t (:foreground ,yozora-wing :background ,yozora-insect
+                                :box (:line-width -1 :color ,yozora-insect) :weight normal))))
    '(mode-line-buffer-id ((t (:weight bold))))
    '(mode-line-emphasis  ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 2 :color ,yozora-petal)))))
@@ -123,6 +122,8 @@ The theme has to be reloaded after changing anything in this group."
    `(info-index-match ((t (:background ,yozora-bird))))
 
    `(dired-directory ((t (:foreground ,yozora-moon))))
+
+   `(ivy-current-match ((t (:foreground ,yozora-bird :background ,yozora-star))))
 
    `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
    `(web-mode-html-tag-face          ((t (:foreground ,yozora-leaf))))
