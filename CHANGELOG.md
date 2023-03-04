@@ -4,6 +4,18 @@
 
 ### Added
 - linum-mode face
+- dired-directory face
+- hl-line face
+- ivy-current-match face
+
+### Changed
+- font-lock-warning-face
+- mode-line and mode-line-highlight faces
+- match face
+- highlight face
+
+### Removed
+- Unnecessary local valiable (yozora-hero)
 
 ## v0.3 (2023-02-22)
 
