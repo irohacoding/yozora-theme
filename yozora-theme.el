@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.3.1
+;; Version: 0.3.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -61,7 +61,8 @@ The theme has to be reloaded after changing anything in this group."
        (yozora-moon   "#f2f154")
        (yozora-star   "#eeee99")
        (yozora-meteor "#f1f1de")
-       (yozora-heart  "#e5a4bf"))
+       (yozora-heart  "#e5a4bf")
+       (yozora-aurora "#8b668b"))
 
   (custom-theme-set-faces
    'yozora
@@ -123,7 +124,11 @@ The theme has to be reloaded after changing anything in this group."
 
    `(dired-directory ((t (:foreground ,yozora-moon))))
 
-   `(ivy-current-match ((t (:foreground ,yozora-bird :background ,yozora-star))))
+   `(ivy-current-match           ((t (:foreground ,yozora-wing :background ,yozora-aurora))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground ,yozora-wing :background ,yozora-cloud))))
+   `(ivy-minibuffer-match-face-2 ((t (:foreground ,yozora-wing :background ,yozora-insect))))
+   `(ivy-minibuffer-match-face-3 ((t (:foreground ,yozora-wing :background ,yozora-bird))))
+   `(ivy-minibuffer-match-face-4 ((t (:foreground ,yozora-wing :background ,yozora-petal))))
 
    `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
    `(web-mode-html-tag-face          ((t (:foreground ,yozora-leaf))))
