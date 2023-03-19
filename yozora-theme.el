@@ -131,10 +131,10 @@ The theme has to be reloaded after changing anything in this group."
    `(ivy-minibuffer-match-face-4 ((t (:foreground ,yozora-wing :background ,yozora-petal))))
 
    `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
-   `(web-mode-html-tag-face          ((t (:foreground ,yozora-leaf))))
-   `(web-mode-html-tag-bracket-face  ((t (:foreground ,yozora-leaf))))
+   `(web-mode-html-tag-face          ((t (:foreground ,yozora-moon))))
+   `(web-mode-html-tag-bracket-face  ((t (:foreground ,yozora-moon))))
    `(web-mode-html-attr-name-face    ((t (:foreground ,yozora-star))))
-   `(web-mode-html-attr-value-face   ((t (:foreground ,yozora-moon))))
+   `(web-mode-html-attr-value-face   ((t (:foreground ,yozora-heart))))
    `(web-mode-css-selector-face      ((t (:foreground ,yozora-leaf))))
    `(web-mode-css-property-name-face ((t (:foreground ,yozora-star))))
    `(web-mode-function-name-face     ((t (:foreground ,yozora-heart))))
