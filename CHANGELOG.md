@@ -1,6 +1,9 @@
 # Change Log
 
-## v0.4 (Unreleased)
+## main (Unreleased)
+
+
+## v0.4 (2023-03-19)
 
 ### Added
 - linum-mode face
@@ -13,6 +16,9 @@
 - mode-line and mode-line-highlight faces
 - match face
 - highlight face
+- web-mode-html-tag-face
+- web-mode-html-tag-bracket-face
+- web-mode-html-attr-value-face
 
 ### Removed
 - Unnecessary local valiable (yozora-hero)
