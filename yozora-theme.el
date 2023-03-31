@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.4
+;; Version: 0.4.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -122,7 +122,10 @@ The theme has to be reloaded after changing anything in this group."
    '(query-replace    ((t (:inherit isearch))))
    `(info-index-match ((t (:background ,yozora-bird))))
 
-   `(dired-directory ((t (:foreground ,yozora-moon))))
+   `(dired-directory ((t (:foreground ,yozora-moon, :background ,yozora-bird))))
+   `(dired-header    ((t (:foreground ,yozora-moon, :background ,yozora-bird))))
+   `(dired-fragged   ((t (:foreground ,yozora-heart))))
+   `(dired-mark      ((t (:foreground ,yozora-heart :weight bold))))
 
    `(ivy-current-match           ((t (:foreground ,yozora-wing :background ,yozora-aurora))))
    `(ivy-minibuffer-match-face-1 ((t (:foreground ,yozora-wing :background ,yozora-cloud))))

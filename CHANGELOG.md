@@ -2,6 +2,13 @@
 
 ## main (Unreleased)
 
+### Added
+- dired-header face
+- dired-fragged face
+- dired-mark face
+
+### Changed
+- dired-directory face (add darker background color)
 
 ## v0.4 (2023-03-19)
 
