@@ -124,7 +124,7 @@ The theme has to be reloaded after changing anything in this group."
 
    `(dired-directory ((t (:foreground ,yozora-moon, :background ,yozora-bird))))
    `(dired-header    ((t (:foreground ,yozora-moon, :background ,yozora-bird))))
-   `(dired-fragged   ((t (:foreground ,yozora-heart))))
+   `(dired-flagged   ((t (:foreground ,yozora-heart :weight bold))))
    `(dired-mark      ((t (:foreground ,yozora-heart :weight bold))))
 
    `(ivy-current-match           ((t (:foreground ,yozora-wing :background ,yozora-aurora))))
