@@ -1,6 +1,6 @@
 ;;; yozora-theme.el --- A dark theme for Emacs inspired by moon sky -*- lexical-binding: t -*-
 
-;;; Copyright (C) 2021-2023 IrohaCoding
+;; Copyright (C) 2021-2023 IrohaCoding
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
