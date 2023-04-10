@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.4.1
+;; Version: 0.4.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -142,7 +142,24 @@ The theme has to be reloaded after changing anything in this group."
    `(web-mode-css-property-name-face ((t (:foreground ,yozora-star))))
    `(web-mode-function-name-face     ((t (:foreground ,yozora-heart))))
    `(web-mode-function-call-face     ((t (:foreground ,yozora-star))))
-   `(web-mode-valiable-name-face     ((t (:foreground ,yozora-leaf))))))
+   `(web-mode-valiable-name-face     ((t (:foreground ,yozora-leaf))))
+
+   `(org-meta-line      ((t (:foreground ,yozora-cloud))))
+   `(org-document-title ((t (:foreground ,yozora-wing :weight bold))))
+   `(org-document-info  ((t (:foreground ,yozora-wing))))
+   `(org-todo           ((t (:foreground ,yozora-heart :weight bold))))
+   `(org-done           ((t (:foreground ,yozora-star :weight bold))))
+   `(org-priority       ((t (:foreground ,yozora-star))))
+   `(org-date           ((t (:foreground ,yozora-leaf))))
+   `(org-table          ((t (:foreground ,yozora-meteor))))
+   `(org-level-1        ((t (:foreground ,yozora-moon))))
+   `(org-level-2        ((t (:foreground ,yozora-star))))
+   `(org-level-3        ((t (:foreground ,yozora-meteor))))
+   `(org-level-4        ((t (:foreground ,yozora-leaf))))
+   `(org-level-5        ((t (:foreground ,yozora-heart))))
+   `(org-level-6        ((t (:foreground ,yozora-aurora))))
+   `(org-level-7        ((t (:foreground ,yozora-wing))))
+   `(org-level-8        ((t (:foreground ,yozora-cloud))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)

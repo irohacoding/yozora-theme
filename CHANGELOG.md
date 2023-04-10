@@ -6,6 +6,7 @@
 - dired-header face
 - dired-fragged face
 - dired-mark face
+- org-mode faces
 
 ### Changed
 - dired-directory face (add darker background color)
