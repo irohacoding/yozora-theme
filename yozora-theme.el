@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.4.2
+;; Version: 0.4.3
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -78,6 +78,11 @@ The theme has to be reloaded after changing anything in this group."
    `(trailing-whitespace ((t (:foreground ,yozora-bird :background ,yozora-star))))
    `(linum               ((t (:foreground ,yozora-wing :background ,yozora-bird))))
    `(hl-line             ((t (:background ,yozora-petal))))
+
+   `(whitespace-newline     ((t (:foreground ,yozora-insect))))
+   `(whitespace-space       ((t (:foreground ,yozora-insect))))
+   `(whitespace-tab         ((t (:foreground ,yozora-insect :background ,yozora-bird))))
+   `(whitespace-indentation ((t (:foreground ,yozora-heart :background ,yozora-bird))))
 
    `(show-paren-match            ((t (:foreground ,yozora-bird :background ,yozora-star))))
    `(show-paren-match-expression ((t (:background ,yozora-cloud))))
