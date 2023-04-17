@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.4.3
+;; Version: 0.4.4
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -57,12 +57,13 @@ The theme has to be reloaded after changing anything in this group."
        (yozora-insect "#696969")
        (yozora-cloud  "#878787")
        (yozora-wing   "#ececec")
-       (yozora-leaf   "#cce123")
-       (yozora-moon   "#f2f154")
-       (yozora-star   "#eeee99")
+       (yozora-leaf   "#ccef12")
+       (yozora-lamp   "#ffa500")
+       (yozora-moon   "#ffd700")
+       (yozora-star   "#ffff00")
        (yozora-meteor "#f1f1de")
-       (yozora-heart  "#e5a4bf")
-       (yozora-aurora "#8b668b"))
+       (yozora-heart  "#ff6eb4")
+       (yozora-aurora "#5d478b"))
 
   (custom-theme-set-faces
    'yozora
@@ -90,7 +91,7 @@ The theme has to be reloaded after changing anything in this group."
 
    `(font-lock-builtin-face              ((t (:foreground ,yozora-moon))))
    '(font-lock-comment-delimiter-face    ((default (:inherit (font-lock-comment-face)))))
-   `(font-lock-comment-face              ((t (:foreground ,yozora-star))))
+   `(font-lock-comment-face              ((t (:foreground ,yozora-cloud))))
    `(font-lock-constant-face             ((t (:foreground ,yozora-leaf))))
    '(font-lock-doc-face                  ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face        ((t (:foreground ,yozora-star))))
@@ -102,7 +103,7 @@ The theme has to be reloaded after changing anything in this group."
    `(font-lock-string-face               ((t (:foreground ,yozora-star))))
    `(font-lock-type-face                 ((t (:foreground ,yozora-meteor))))
    `(font-lock-variable-name-face        ((t (:foreground ,yozora-leaf))))
-   `(font-lock-warning-face              ((t (:foreground ,yozora-heart :weight bold))))
+   `(font-lock-warning-face              ((t (:foreground ,yozora-lamp :weight bold))))
 
    `(mode-line ((t (:foreground ,yozora-wing :background ,yozora-insect
                                 :box (:line-width -1 :color ,yozora-insect) :weight normal))))
