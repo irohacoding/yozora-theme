@@ -8,9 +8,17 @@
 - dired-mark face
 - org-mode faces
 - whitespace-mode faces
+- yozora-lamp color (orange)
 
 ### Changed
 - dired-directory face (add darker background color)
+- yozora-leaf color
+- yozora-moon color
+- yozora-star color
+- yozora-heart color
+- yozora-aurora color
+- font-lock-comment-face (yellow to gray)
+- font-lock-warning-face (pink to orange)
 
 ## v0.4 (2023-03-19)
 
