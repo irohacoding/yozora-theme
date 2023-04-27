@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.4.4
+;; Version: 0.4.5
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -60,7 +60,7 @@ The theme has to be reloaded after changing anything in this group."
        (yozora-leaf   "#ccef12")
        (yozora-lamp   "#ffa500")
        (yozora-moon   "#ffd700")
-       (yozora-star   "#ffff00")
+       (yozora-star   "#eeee00")
        (yozora-meteor "#f1f1de")
        (yozora-heart  "#ff6eb4")
        (yozora-aurora "#5d478b"))
