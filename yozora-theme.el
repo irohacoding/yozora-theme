@@ -56,13 +56,13 @@ The theme has to be reloaded after changing anything in this group."
        (yozora-bird   "#3e3e3e")
        (yozora-insect "#696969")
        (yozora-cloud  "#878787")
-       (yozora-wing   "#ececec")
+       (yozora-wing   "#fff5ee")
        (yozora-leaf   "#ccef12")
        (yozora-lamp   "#ffa500")
-       (yozora-moon   "#ffd700")
-       (yozora-star   "#eeee00")
+       (yozora-moon   "#ffc125")
+       (yozora-star   "#ffff55")
        (yozora-meteor "#f1f1de")
-       (yozora-heart  "#ff6eb4")
+       (yozora-heart  "#ff6a6a")
        (yozora-aurora "#5d478b"))
 
   (custom-theme-set-faces
