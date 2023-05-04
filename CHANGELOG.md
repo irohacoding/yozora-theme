@@ -3,6 +3,12 @@
 ## main (Unreleased)
 
 ### Added
+
+Nothing yet.
+
+## v0.5 (2023-05-04)
+
+### Added
 - dired-header face
 - dired-fragged face
 - dired-mark face
@@ -13,10 +19,11 @@
 ### Changed
 - dired-directory face (add darker background color)
 - yozora-leaf color
-- yozora-moon color
-- yozora-star color
-- yozora-heart color
+- yozora-moon color * 2
+- yozora-star color * 3
+- yozora-heart color * 2
 - yozora-aurora color
+- yozora-wing color
 - font-lock-comment-face (yellow to gray)
 - font-lock-warning-face (pink to orange)
 
