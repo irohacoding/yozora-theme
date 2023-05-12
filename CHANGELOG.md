@@ -6,6 +6,15 @@
 
 Nothing yet.
 
+### Changed
+
+- yozora-moon color
+- yozora-star color
+
+### Fixed
+
+- local variable declaration (let* -> let)
+
 ## v0.5 (2023-05-04)
 
 ### Added
