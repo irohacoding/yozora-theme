@@ -6,10 +6,24 @@
 
 Nothing yet.
 
+## v0.6 (2023-05-15)
+
 ### Changed
 
-- yozora-moon color
-- yozora-star color
+almost all colors!
+
+- yozora-moon color * 2
+- yozora-star color * 2
+- yozora-petal color
+- yozora-sky color
+- yozora-bird color
+- yozora-insect color
+- yozora-cloud color
+- yozora-wing color
+- yozora-leaf color
+- yozora-lamp color
+- yozora-heart color
+- yozora-aurora color
 
 ### Fixed
 
