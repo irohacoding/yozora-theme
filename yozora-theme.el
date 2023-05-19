@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.6.0
+;; Version: 0.6.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -51,7 +51,7 @@ The theme has to be reloaded after changing anything in this group."
   (disable-theme 'yozora)
   (load-theme 'yozora t))
 
-(let ((yozora-petal  "#1a1818")
+(let ((yozora-petal  "#262524")
       (yozora-sky    "#333130")
       (yozora-bird   "#4d4948")
       (yozora-insect "#666160")
