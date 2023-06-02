@@ -6,6 +6,10 @@
 
 Nothing yet.
 
+### Changed
+
+- yozora-petal color (#1a1818 -> #262524)
+
 ## v0.6 (2023-05-15)
 
 ### Changed
