@@ -4,11 +4,15 @@
 
 ### Added
 
-Nothing yet.
+- markdown-list-face
+- markdown-header-face
+- markdown-header-delimiter-face
 
 ### Changed
 
 - yozora-petal color (#1a1818 -> #262524)
+- yozora-meteor color (#f1f1de -> #66cdaa)
+- yozora-star color (#ebd842 -> #ffec47)
 
 ## v0.6 (2023-05-15)
 
