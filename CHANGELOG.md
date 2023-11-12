@@ -14,6 +14,7 @@
 - yozora-meteor color (#f1f1de -> #66cdaa)
 - yozora-meteor color (#66cdaa -> #8ac6b5)
 - yozora-star color (#ebd842 -> #ffec47)
+- yozora-star color (#ffec47 -> #ffeca3)
 
 ## v0.6 (2023-05-15)
 
