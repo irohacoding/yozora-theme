@@ -4,6 +4,12 @@
 
 ### Added
 
+- nothing yet.
+
+## v0.7 (2023-11-14)
+
+### Added
+
 - markdown-list-face
 - markdown-header-face
 - markdown-header-delimiter-face
