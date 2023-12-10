@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.7.0
+;; Version: 0.7.1
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -56,6 +56,7 @@ The theme has to be reloaded after changing anything in this group."
       (yozora-bird   "#4d4948")
       (yozora-insect "#666160")
       (yozora-cloud  "#807978")
+      (yozora-rain   "#bbb3a0")
       (yozora-wing   "#f8f4e6")
       (yozora-meteor "#8ac6b5")
       (yozora-leaf   "#b8d200")
@@ -91,7 +92,7 @@ The theme has to be reloaded after changing anything in this group."
 
    `(font-lock-builtin-face              ((t (:foreground ,yozora-moon))))
    '(font-lock-comment-delimiter-face    ((default (:inherit (font-lock-comment-face)))))
-   `(font-lock-comment-face              ((t (:foreground ,yozora-cloud))))
+   `(font-lock-comment-face              ((t (:foreground ,yozora-rain))))
    `(font-lock-constant-face             ((t (:foreground ,yozora-leaf))))
    '(font-lock-doc-face                  ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face        ((t (:foreground ,yozora-star))))
