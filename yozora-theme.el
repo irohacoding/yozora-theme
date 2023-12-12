@@ -4,7 +4,7 @@
 
 ;; Author: IrohaCoding <info@irohacoding.com>
 ;; Created: 2021-11-29
-;; Version: 0.7.1
+;; Version: 0.7.2
 ;; Keywords: faces
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/irohacoding/yozora-theme
@@ -12,18 +12,18 @@
 ;; This file is not part of GNU Emacs, but is distributed under
 ;; the same terms.
 
-;; GNU Emacs is free software: you can redistribute it and/or modify
+;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either verion 3 of the License, or
 ;; (at your option) any later version.
 
-;; GNU Emacs is distributed in the hope that it will be useful,
+;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs. If not, see <http://www.gnu.org/licenses/>.
+;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -116,7 +116,7 @@ The theme has to be reloaded after changing anything in this group."
 
    '(button       ((t (:inherit (link)))))
    `(link         ((t (:foreground ,yozora-star :underline t))))
-   `(link-visited ((t (:inherit link :foreground ,yozora-cloud))))
+   `(link-visited ((t (:inherit link :foreground ,yozora-rain))))
    `(fringe       ((t (:background ,yozora-sky))))
    `(header-line  ((t (:inherit mode-line :background ,yozora-sky :foreground ,yozora-wing :box nil))))
    `(tooltip      ((t (:inherit variable-pitch :background ,yozora-meteor :foreground ,yozora-bird))))
@@ -140,7 +140,7 @@ The theme has to be reloaded after changing anything in this group."
    `(ivy-minibuffer-match-face-3 ((t (:foreground ,yozora-wing :background ,yozora-bird))))
    `(ivy-minibuffer-match-face-4 ((t (:foreground ,yozora-wing :background ,yozora-petal))))
 
-   `(web-mode-doctype-face           ((t (:foreground ,yozora-cloud))))
+   `(web-mode-doctype-face           ((t (:foreground ,yozora-rain))))
    `(web-mode-html-tag-face          ((t (:foreground ,yozora-moon))))
    `(web-mode-html-tag-bracket-face  ((t (:foreground ,yozora-moon))))
    `(web-mode-html-attr-name-face    ((t (:foreground ,yozora-star))))
@@ -151,7 +151,7 @@ The theme has to be reloaded after changing anything in this group."
    `(web-mode-function-call-face     ((t (:foreground ,yozora-star))))
    `(web-mode-valiable-name-face     ((t (:foreground ,yozora-leaf))))
 
-   `(org-meta-line      ((t (:foreground ,yozora-cloud))))
+   `(org-meta-line      ((t (:foreground ,yozora-rain))))
    `(org-document-title ((t (:foreground ,yozora-wing :weight bold))))
    `(org-document-info  ((t (:foreground ,yozora-wing))))
    `(org-todo           ((t (:foreground ,yozora-heart :weight bold))))
@@ -166,7 +166,7 @@ The theme has to be reloaded after changing anything in this group."
    `(org-level-5        ((t (:foreground ,yozora-heart))))
    `(org-level-6        ((t (:foreground ,yozora-aurora))))
    `(org-level-7        ((t (:foreground ,yozora-wing))))
-   `(org-level-8        ((t (:foreground ,yozora-cloud))))
+   `(org-level-8        ((t (:foreground ,yozora-rain))))
 
    `(markdown-list-face             ((t (:foreground ,yozora-star))))
    `(markdown-header-face           ((t (:foreground ,yozora-meteor :weight bold))))
