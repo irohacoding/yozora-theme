@@ -4,7 +4,17 @@
 
 ### Added
 
-- nothing yet.
+- yozora-rain color (#bbb3a0)
+  - font-lock-comment-face
+  - link-visited
+  - web-mode-doctype-face
+  - org-meta-line
+  - org-level-8
+
+### Modified
+
+- program name of terms
+
 
 ## v0.7 (2023-11-14)
 
